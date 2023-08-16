@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Jaswanth Gade
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/j-g1//}{\Large Jaswanth Gade}} & Email : \href{mailto:jash.gade@gmail.com}{jash.gade@gmail.com}\\
+  \href{https://www.linkedin.com/in/j-g1/}{Linkedin} & Mobile : \href{tel:+115095921475}{+1-509-592-1475} \\
+\end{tabular*}
+
+%-----------Summary-----------------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Past}
+      {Specialization in end-to-end data engineering solutions with 4+ years of industrial experience}
+    \resumeSubItem{Future}
+      {Looking forward to work in a fast-paced cloud environment with a challenging objective }
+  \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cardinal Health}{Columbus, OH}
+      {Senior Data Engineer}{June 2023 - Present}
+      \resumeItemListStart
+        \resumeItem{GCP}
+          {Built transformation data pipelines to build a data warehousing solution on BigQuery}
+        \resumeItem{Airflow}
+          {Developed cloud functions/airflow dag to orchestrate and trigger complex pipeline designs}
+          \resumeItem{CICD}
+          {Automated deployments using terraform, jenkins and gitlab for continuous integrations(CI/CD)}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Ernst and Young}{Phoenix, AZ}
+      {Senior Data Engineer}{Sep 2021 - May 2023}
+      \resumeItemListStart
+        \resumeItem{Azure}
+          {Designed data pipelines on Azure synapse to connect to various sources like snowflake, api’s}
+        \resumeItem{Snowflake}
+          {Built automated jobs to unload data from snowflake to ADLS using azure synapse}
+        \resumeItem{Spark/Scala}
+          {Built a spark/scala application to optimize the providers data in healthcare industry}
+          \resumeItem{Business}
+          {Drafting SOWs, budgeting, leading and delivering end to end projects in the consulting business}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Oracle Cerner}{Kansas City, MO}
+      {Software Engineer Data}{Feb 2021 - Sep 2021}
+      \resumeItemListStart
+        \resumeItem{Hadoop}
+          {Built data pipeline using python, sql, hive on hdfs platform and monitored the pipelines on oozie}
+        \resumeItem{Python}
+          {Worked on apache spark, writing python applications to wrangle data obtained from mySQL databases}
+          \resumeItem{Full Stack}
+          {Developed a budget managing application for the data revenue team using springboot and javascript}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Verizon}{Irving, TX}
+      {Data Engineer}{Sep 2020 - Feb 2021}
+      \resumeItemListStart
+        \resumeItem{Hive}
+          {Developed data pipelines that handle petabytes of data using apache nifi, hive, python, hadoop clusters}
+        \resumeItem{Pulsar/Streaming}
+          {Monitored and handled data feed missing problems from the datalake pipelines on hdfs using oozie, yamas}
+          \resumeItem{Testing}
+          {Managed automated unit test using jest and jUnit frameworks}
+      \resumeItemListEnd
+  \resumeSubheading
+      {Enterprise Systems}{Pullman, WA}
+      {Data Engineer}{May 2019 - May 2020}
+      \resumeItemListStart
+        \resumeItem{IBM Watson}
+          {Deployed an AI chatbot using for university service desk and reduced service tickets by 50\%}
+        \resumeItem{Automation}
+          {Architected a python applciation to automate student enrollment reporting to WA state research  and education development center}
+          \resumeItem{AI and NLP}
+          {Developed an AI product using IBM Watson (NLP) to forecast student dropouts with 89\% accuracy}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {Python, SQL, pyspark, scala, terraform}
+    \resumeSubItem{Data Engineering}
+      {Hadoop, spark, hive, oozie,pulsar, ETL, talend, informatica, kafka, data modeling, azure data factory, azure synapse}
+    \resumeSubItem{Databases/storage}
+      {mysql, snowflake, sql server, oracle, azure data lake, data warehouses, relational databases}
+    \resumeSubItem{Additional skills}
+      {Git, IBM cloud, GCP, snowflake, data mesh, Azure, airflow, jenkins, looker, docker}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Washington State University}{Pullman, WA}
+      {Master of Science in Computer Science}{Aug. 2018 -- May. 2020}
+    \resumeSubheading
+      {GITAM University}{Hyderabad, India}
+      {Bachelor of Engineering in Computer Science}{Aug. 2014 -- May. 2008}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
